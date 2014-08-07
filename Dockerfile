@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y tomcat6 \
 
 ADD install-solr.sh /install-solr.sh
 RUN chmod +x /install-solr.sh
-RUN /install-solr.sh -lgerman,english ; exit 0
+RUN /install-solr.sh ; exit 0
 
 ADD solr.xml /opt/solr-tomcat/solr/solr-4.8.1/solr.xml
 ADD run.sh /run.sh
