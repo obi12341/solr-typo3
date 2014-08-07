@@ -164,8 +164,6 @@ cecho ()
 
 	echo -e "$color$message"
 
-	# Reset text attributes to normal + without clearing screen.
-	tput sgr0
 
 	return
 }
@@ -389,8 +387,3 @@ done
 
 # ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
 
-cecho "Starting Tomcat." $green
-#service tomcat6 start
-
-cecho "Done." $green
-cecho "Tomcat is running and available on port 8080." $green
