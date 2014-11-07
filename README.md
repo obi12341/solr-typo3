@@ -3,7 +3,7 @@ Solr configured for Typo3
 
 Just use this command to start the container. Solr will listen on port 8282.
 
-	docker run -d -p 8282:8080 obi12341/solr-typo3
+	docker run -d -p 8282:8080 writl/solr-typo3
 
 
 In the solr extension you can put these paths:

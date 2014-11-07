@@ -1,5 +1,5 @@
 FROM ubuntu:trusty
-MAINTAINER Patrick Oberdorf <p.oberdorf@raphael-gmbh.de>
+MAINTAINER Patrick Oberdorf <patrick@oberdorf.net>
 
 RUN apt-get update && apt-get install -y tomcat6 \
 		wget \
