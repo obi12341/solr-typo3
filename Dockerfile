@@ -3,7 +3,8 @@ MAINTAINER Patrick Oberdorf <patrick@oberdorf.net>
 
 RUN apt-get update && apt-get install -y tomcat6 \
 		wget \
-		unzip
+		unzip \
+		&& apt-get clean
 
 ADD install-solr.sh /install-solr.sh
 RUN chmod +x /install-solr.sh
