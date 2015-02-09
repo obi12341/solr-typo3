@@ -10,6 +10,8 @@ RUN chmod +x /install-solr.sh
 RUN /install-solr.sh ; exit 0
 
 RUN sed -i "s/\[localhost\]\.level = INFO/\[localhost\]\.level = WARNING/g" /var/lib/tomcat6/conf/logging.properties
+RUN echo ".level = WARNING" >> /var/lib/tomcat6/conf/logging.properties
+
 ADD solr.xml /opt/solr-tomcat/solr/solr-4.8.1/solr.xml
 ADD run.sh /run.sh
 RUN chmod +x /run.sh
