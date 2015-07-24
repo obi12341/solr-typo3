@@ -1,5 +1,6 @@
 Solr configured for Typo3
 ===========
+[![](https://badge.imagelayers.io/writl/solr-typo3:latest.svg)](https://imagelayers.io/?images=writl/solr-typo3:latest 'Get your own badge on imagelayers.io')
 
 Just use this command to start the container. Solr will listen on port 8282.
 
