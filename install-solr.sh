@@ -276,7 +276,7 @@ do
 
   cd /opt/solr-tomcat
   cecho "Downloading Apache Solr $SOLR" $green
-  wget -q http://mirror.dkd.de/apache/lucene/solr/$SOLR_VERSION/$SOLR_PACKAGE_NAME-$SOLR_VERSION.zip 2>&1 | progressfilt
+  wget -q http://archive.apache.org/dist/lucene/solr/$SOLR_VERSION/$SOLR_PACKAGE_NAME-$SOLR_VERSION.zip 2>&1 | progressfilt
   cecho "Unpacking Apache Solr." $green
   unzip -q $SOLR_PACKAGE_NAME-$SOLR.zip
 
