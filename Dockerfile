@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y tomcat6 \
 ADD install-solr.sh /install-solr.sh
 RUN chmod +x /install-solr.sh
 RUN /install-solr.sh ; exit 0
+RUN mkdir /tmp/tomcat6-tomcat6-tmp && chmod 777 /tmp/tomcat6-tomcat6-tmp
 
 RUN sed -i "s/\[localhost\]\.level = INFO/\[localhost\]\.level = WARNING/g" /var/lib/tomcat6/conf/logging.properties
 RUN echo ".level = WARNING" >> /var/lib/tomcat6/conf/logging.properties
