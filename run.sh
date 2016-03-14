@@ -1,2 +1,2 @@
 #!/bin/bash
-/opt/solr-tomcat/tomcat/bin/catalina.sh run
+exec /opt/solr-tomcat/tomcat/bin/catalina.sh run
