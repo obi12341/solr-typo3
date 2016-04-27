@@ -3,10 +3,13 @@ MAINTAINER Patrick Oberdorf <patrick@oberdorf.net>
 
 ENV TERM linux
 
-RUN apt-get update && apt-get install -y openjdk-7-jre-headless \
-		wget \
-		unzip \
-		&& apt-get clean
+RUN apt-get update && apt-get install -y \
+	openjdk-7-jre-headless \
+	wget \
+	unzip \
+	curl \
+	&& apt-get clean \
+	&& rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ADD install-solr.sh /install-solr.sh
 RUN chmod +x /install-solr.sh
