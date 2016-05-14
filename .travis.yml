@@ -11,4 +11,4 @@ before_install:
   - docker build -t test .
 
 script:
-  - IMAGEID=$(docker ps -q test) rspec Dockerfile_spec.rb
+  - IMAGEID=$(docker images -q test) rspec Dockerfile_spec.rb
