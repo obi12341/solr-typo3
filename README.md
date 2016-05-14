@@ -1,6 +1,6 @@
 Solr configured for Typo3
 ===========
-[![](https://badge.imagelayers.io/writl/solr-typo3:latest.svg)](https://imagelayers.io/?images=writl/solr-typo3:latest 'Get your own badge on imagelayers.io')
+[![Build Status](https://travis-ci.org/obi12341/solr-typo3.svg?branch=master)](https://travis-ci.org/obi12341/solr-typo3)
 
 __***Note:***__
 **If you are using EXT:solr < 4.0 please use solr-typo3:4.10.4-1**
