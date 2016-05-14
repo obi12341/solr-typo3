@@ -8,6 +8,7 @@ services:
 before_install:
   - gem install serverspec
   - gem install docker-api
+  - docker build -t test .
 
 script:
-  - rspec Dockerfile_spec.rb
+  - IMAGEID=$(docker ps -q test) rspec Dockerfile_spec.rb
