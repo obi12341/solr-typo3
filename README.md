@@ -3,19 +3,20 @@ Solr configured for Typo3
 [![Build Status](https://travis-ci.org/obi12341/solr-typo3.svg?branch=master)](https://travis-ci.org/obi12341/solr-typo3)
 
 __***Note:***__
-**If you are using EXT:solr < 4.0 please use solr-typo3:4.10.4-1**
+**If you are using EXT:solr = 4.0 please use solr-typo3:4.10.4-2**
+**If you are using EXT:solr = 5.0 please use solr-typo3:4.10.4-3**
 
 Just use this command to start the container. Solr will listen on port 8282.
 
-	docker run -d -p 8282:8080 writl/solr-typo3:4.10.4-2
+	docker run -d -p 8282:8080 writl/solr-typo3:4.10.4-3
 
 If you want to run in production you should better use this:
 
-	docker run -d --restart="always" -p 127.0.0.1:8282:8080 writl/solr-typo3:4.10.4-2
+	docker run -d --restart="always" -p 127.0.0.1:8282:8080 writl/solr-typo3:4.10.4-3
 	
 If you want to store the data persistent you have to run it like that:
 	
-	docker run -d --restart="always" -p 127.0.0.1:8282:8080 -v <dir>:/opt/solr-tomcat/solr/typo3cores/data writl/solr-typo3:4.10.4-2
+	docker run -d --restart="always" -p 127.0.0.1:8282:8080 -v <dir>:/opt/solr-tomcat/solr/typo3cores/data writl/solr-typo3:4.10.4-3
 	
 In the solr extension you can put these paths:
 
