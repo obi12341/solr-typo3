@@ -4,6 +4,7 @@ Solr configured for Typo3
 
 __***Note:***__
 **If you are using EXT:solr = 4.0 please use solr-typo3:4.10.4-2**
+
 **If you are using EXT:solr = 5.0 please use solr-typo3:4.10.4-3**
 
 Just use this command to start the container. Solr will listen on port 8282.
